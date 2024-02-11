@@ -18,6 +18,11 @@ var AppUtilityConvert = /** @class */ (function () {
     AppUtilityConvert.convertNumberToString = function (value) {
         return value.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ');
     };
+    AppUtilityConvert.addDays = function (startDate, days) {
+        var dateEcheance = new Date();
+        dateEcheance.setDate(startDate.getDate() + days);
+        return dateEcheance;
+    };
     AppUtilityConvert.convertStringToStringDate = function (s) {
         s = app_control_1.AppUtilityControl.escapeSpecialChar(s);
         try {
