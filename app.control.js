@@ -41,6 +41,13 @@ var AppUtilityControl = /** @class */ (function () {
         }
         return "";
     };
+    AppUtilityControl.validateEmail = function (email, message) {
+        if (email == null)
+            throw new value_data_exception_1.ValueDataException(message);
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email))
+            throw new value_data_exception_1.ValueDataException(message);
+    };
     return AppUtilityControl;
 }());
 exports.AppUtilityControl = AppUtilityControl;

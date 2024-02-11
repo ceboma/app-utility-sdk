@@ -1,6 +1,6 @@
 {
     "name": "@trinix/app-utility",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Utilitaire de développement",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -12,6 +12,7 @@
     "dependencies": {
       "@nestjs/axios": "^1.0.1",
       "axios": "^1.2.2",
+      "bcrypt": "^5.0.1",
       "dotenv": "^16.3.1"
     },
     "devDependencies": {

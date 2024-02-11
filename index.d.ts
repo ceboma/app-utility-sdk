@@ -6,3 +6,4 @@ export * from './models/error.response';
 export * from './models/http.data.response';
 export * from './models/model';
 export * from './models/value.data.exception';
+export * from './app.encryption';
