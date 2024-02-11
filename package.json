@@ -1,0 +1,21 @@
+{
+    "name": "@trinix/app-utility",
+    "version": "1.0.0",
+    "description": "Utilitaire de développement",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "nest build app-utility"
+    },
+    "author": "Christian EBOMA",
+    "license": "MIT",
+    "dependencies": {
+      "@nestjs/axios": "^1.0.1",
+      "axios": "^1.2.2",
+      "dotenv": "^16.3.1"
+    },
+    "devDependencies": {
+      "@types/node": "^20.10.5"
+    }
+  }
+  
